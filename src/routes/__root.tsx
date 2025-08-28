@@ -76,15 +76,19 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html>
+    <html suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <div className='p-2 flex gap-2 text-lg'></div>
         {children}
-        <TanStackRouterDevtools position='bottom-right' />
-        <ReactQueryDevtools buttonPosition='bottom-left' />
+        {import.meta.env.DEV ? (
+          <TanStackRouterDevtools position='bottom-right' />
+        ) : null}
+        {import.meta.env.DEV ? (
+          <ReactQueryDevtools buttonPosition='bottom-left' />
+        ) : null}
         <Scripts />
       </body>
     </html>
