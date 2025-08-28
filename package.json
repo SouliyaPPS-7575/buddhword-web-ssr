@@ -1,12 +1,12 @@
 {
-  "name": "tanstack-start-example-basic-react-query",
+  "name": "buddhaword-ssr",
   "private": true,
   "sideEffects": false,
   "type": "module",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && tsc --noEmit",
-    "start": "vite start"
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.66.0",
