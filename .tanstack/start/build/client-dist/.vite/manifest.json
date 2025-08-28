@@ -1,6 +1,6 @@
 {
   "../../../../../~start/default-client-entry.tsx": {
-    "file": "assets/main-BmidIOMw.js",
+    "file": "assets/main-K2cWDOqK.js",
     "name": "main",
     "src": "../../../../../~start/default-client-entry.tsx",
     "isEntry": true,
@@ -9,15 +9,15 @@
       "src/routes/index.tsx?tsr-split=component"
     ],
     "assets": [
-      "assets/app-DOZ_Fz2d.css"
+      "assets/app-eJEYcWQU.css"
     ]
   },
   "/Users/souliya/Documents/FullStackDev/buddhaword-ssr/src/styles/app.css": {
-    "file": "assets/app-DOZ_Fz2d.css",
+    "file": "assets/app-eJEYcWQU.css",
     "src": "/Users/souliya/Documents/FullStackDev/buddhaword-ssr/src/styles/app.css"
   },
   "src/routes/deferred.tsx?tsr-split=component": {
-    "file": "assets/deferred-BxJXX22s.js",
+    "file": "assets/deferred-Ds3KzMyf.js",
     "name": "deferred",
     "src": "src/routes/deferred.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -26,7 +26,7 @@
     ]
   },
   "src/routes/index.tsx?tsr-split=component": {
-    "file": "assets/index-VeRRKSN1.js",
+    "file": "assets/index-DZKVthyT.js",
     "name": "index",
     "src": "src/routes/index.tsx?tsr-split=component",
     "isDynamicEntry": true,

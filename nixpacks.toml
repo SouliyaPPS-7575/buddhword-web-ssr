@@ -1,0 +1,8 @@
+providers = ["node"]
+
+# Respect the Node version from package.json engines
+
+# Use default install/build/start inferred by Nixpacks:
+# - install: npm install
+# - build:   npm run build
+# - start:   npm start (if present)
