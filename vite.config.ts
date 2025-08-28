@@ -4,20 +4,18 @@ import react from '@vitejs/plugin-react'
 import tsConfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
-  // Reduce noise by hiding warnings during build
-  logLevel: 'error',
   server: {
     port: 3000,
   },
   css: {
     // Ensure PostCSS does not try to emit sourcemaps
     postcss: {
-      map: false,
+      map: { inline: false, annotation: false },
     },
   },
   build: {
-    // Disable sourcemaps in prod to avoid css-post sourcemap noise
-    sourcemap: false,
+    // Enable sourcemaps so CSS transforms can chain maps correctly
+    sourcemap: true,
     rollupOptions: {
       onwarn(warning, defaultHandler) {
         // Silence unused external imports coming from TanStack/H3 bundles
@@ -27,13 +25,6 @@ export default defineConfig({
           ((warning as any).message.includes('@tanstack/router-core/ssr/server') ||
             (warning as any).message.includes('@tanstack/router-core/ssr/client') ||
             (warning as any).message.includes('h3'))
-        ) {
-          return
-        }
-        // Silence sourcemap warning from vite:css-post
-        if (
-          warning.code === 'PLUGIN_WARNING' &&
-          (warning as any).plugin === 'vite:css-post'
         ) {
           return
         }
