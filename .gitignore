@@ -8,6 +8,8 @@ yarn.lock
 .vercel
 .output
 .tanstack
+.netlify
+/dist
 /build/
 /api/
 /server/build

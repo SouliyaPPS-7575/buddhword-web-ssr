@@ -1,6 +1,6 @@
 {
   "../../../../../~start/default-client-entry.tsx": {
-    "file": "assets/main-ado42R_G.js",
+    "file": "assets/main-DC1vlJ3P.js",
     "name": "main",
     "src": "../../../../../~start/default-client-entry.tsx",
     "isEntry": true,
@@ -17,7 +17,7 @@
     "src": "/Users/souliya/Documents/FullStackDev/buddhaword-ssr/src/styles/app.css"
   },
   "src/routes/deferred.tsx?tsr-split=component": {
-    "file": "assets/deferred-DzrOGiVA.js",
+    "file": "assets/deferred-BQGIGH0H.js",
     "name": "deferred",
     "src": "src/routes/deferred.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -26,7 +26,7 @@
     ]
   },
   "src/routes/index.tsx?tsr-split=component": {
-    "file": "assets/index-DZSyOjaB.js",
+    "file": "assets/index-pFnsR9wd.js",
     "name": "index",
     "src": "src/routes/index.tsx?tsr-split=component",
     "isDynamicEntry": true,

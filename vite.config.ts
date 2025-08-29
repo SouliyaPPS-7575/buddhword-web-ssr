@@ -37,7 +37,8 @@ export default defineConfig({
       projects: ['./tsconfig.json'],
     }),
     tanstackStart({
-      target: 'node-server',
+      // target: 'node-server',
+      target: 'netlify',
       customViteReactPlugin: true,
     }),
     react(),
